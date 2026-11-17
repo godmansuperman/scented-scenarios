@@ -172,6 +172,29 @@ h1, h2, h3 {
 .camping h2 { color: var(--gold-light); }
 .camping .section-intro { color: #d8c3b8; }
 
+/* About Julie */
+.about-wrap {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.about-wrap img {
+  width: 300px;
+  max-width: 70vw;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid var(--gold);
+  flex-shrink: 0;
+}
+.about-text p { font-size: 1.1rem; }
+.about-quote {
+  color: var(--plum);
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
 /* Footer */
 .footer {
   background: var(--plum);
@@ -200,6 +223,7 @@ h1, h2, h3 {
 }
 @media (max-width: 700px) {
   .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-wrap { flex-direction: column; text-align: center; }
 }
 @media (max-width: 600px) {
   .hero h1 { font-size: 2rem; }
