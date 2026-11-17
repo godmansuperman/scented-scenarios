@@ -93,6 +93,14 @@ h1, h2, h3 {
   font-style: italic;
 }
 
+/* Content links */
+main a {
+  color: var(--plum);
+  text-decoration-color: var(--gold);
+  text-underline-offset: 2px;
+}
+main a:hover { color: var(--plum-light); }
+
 /* Our Purpose */
 .purpose p {
   max-width: 720px;
